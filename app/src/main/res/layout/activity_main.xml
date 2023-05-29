@@ -18,11 +18,22 @@
 
         android:inputType="textPersonName"
 
-        android:hint="請輸入名字"/>
+        android:hint="Drink"/>
+    <EditText
+
+        android:id="@+id/edtSize"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:inputType="textPersonName"
+
+        android:hint="Size"/>
 
     <EditText
 
-        android:id="@+id/edtWeight"
+        android:id="@+id/edtPrice"
 
         android:layout_width="match_parent"
 
@@ -30,7 +41,7 @@
 
         android:inputType="number"
 
-        android:hint="請輸入出生時體重"/>
+        android:hint="Price"/>
     <LinearLayout
 
         android:layout_width="match_parent"

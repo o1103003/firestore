@@ -17,26 +17,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var edtName: EditText = findViewById(R.id.edtName)
-
-        var edtWeight:EditText = findViewById(R.id.edtWeight)
+        var edtPrice: EditText = findViewById(R.id.edtPrice)
+        var edtSize:EditText = findViewById(R.id.edtSize)
         var btnUpdate: Button = findViewById(R.id.btnUpdate)
 
         btnUpdate.setOnClickListener({
 
-            val user = hashMapOf(
+            val drink = hashMapOf(
 
-                "名字" to edtName.text.toString(),
+                "Drink" to edtName.text.toString(),
+                "Size" to edtSize.text.toString(),
 
-                "初生體重" to edtWeight.text.toString().toInt()
+                "Price" to edtPrice.text.toString().toInt()
 
             )
 
-            db.collection("users")
+            db.collection("drinks")
 
-                //.add(user)
+                //.add(drink)
                 .document(edtName.text.toString())
 
-                .set(user)
+                .set(drink)
 
                 .addOnSuccessListener { documentReference ->
 
@@ -61,13 +62,13 @@ class MainActivity : AppCompatActivity() {
 
         btnQuery.setOnClickListener({
 
-            db.collection("users")
+            db.collection("drinks")
 
-                //.whereEqualTo("名字", edtName.text.toString())
-                //.whereLessThan("初生體重", edtWeight.text.toString().toInt())
-            .orderBy("初生體重", Query.Direction.DESCENDING)
+                //.whereEqualTo("Drink", edtName.text.toString())
+                //.whereLessThan("Price", edtWeight.text.toString().toInt())
+            .orderBy("Price", Query.Direction.DESCENDING)
 
-            .limit(2)
+            .limit(3)
 
                 .get()
 
@@ -79,9 +80,10 @@ class MainActivity : AppCompatActivity() {
 
                         for (document in task.result!!) {
 
-                            msg += "文件id：" + document.id + ":\n名字：" + document.data["名字"] +
+                            msg += "文件id：" + document.id + ":\n名字：" + document.data["Drink"] +
 
-                                    "\n初生體重：" + document.data["初生體重"].toString() + "\n\n"
+                                    "\nSize：" + document.data["Size"].toString() +
+                                    "\nPrice：" + document.data["Price"].toString()+ "\n\n"
 
                         }
 
