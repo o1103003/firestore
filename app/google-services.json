@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "955609812924",
+    "project_id": "firestore-9dfdc",
+    "storage_bucket": "firestore-9dfdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955609812924:android:90d170fd32e8e52d9e25b9",
+        "android_client_info": {
+          "package_name": "tw.edu.pu.dmwd.natalie.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955609812924-nm7iasvhm1rn7ned4ofnq4s61of95uvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfADcTIaBw7vX6bPF3BH2szOcWIDsyyd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955609812924-nm7iasvhm1rn7ned4ofnq4s61of95uvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955609812924:android:d16f3c34eecad8449e25b9",
+        "android_client_info": {
+          "package_name": "tw.edu.pu.dmwd.natalie.firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955609812924-nm7iasvhm1rn7ned4ofnq4s61of95uvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfADcTIaBw7vX6bPF3BH2szOcWIDsyyd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955609812924-nm7iasvhm1rn7ned4ofnq4s61of95uvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
